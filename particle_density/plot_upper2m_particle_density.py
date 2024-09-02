@@ -13,7 +13,7 @@ import cmaps
 from matplotlib.backend_bases import MouseButton
 
 # grid file
-grd='/Users/jilian/Desktop/LiveOcean/LO_data/grids/hc11/grid.nc'
+grd='grid.nc'
 dsg = xr.open_dataset(grd)
 latr = dsg['lat_rho'].values
 lonr = dsg['lon_rho'].values
