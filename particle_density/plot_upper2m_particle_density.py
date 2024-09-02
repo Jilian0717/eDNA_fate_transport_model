@@ -122,16 +122,16 @@ vol_avg = np.transpose(tmp['vol']/tmp['cnt'], axes=[1,2,0])
 vol_avg[vol_avg==0] = np.nan
 zeta_avg = tmp['zeta']/tmp['cnt']
 #%% import 3D particle number
-fn0='./data/release_2023_06_05_sh1900_3D_previous_50hrs.p'; shading_sites = ['BANG16']
-#fn0='./data/release_2023_06_05_sh1930_3D_previous_50hrs.p'; shading_sites = ['BANG14', 'BANG15']
-#fn0='./data/release_2023_06_05_sh2000_3D_previous_50hrs.p'; shading_sites = ['BANG35']
-#fn0='./data/release_2023_06_05_sh2030_3D_previous_50hrs.p'; shading_sites = ['BANG37']
-#fn0='./data/release_2023_06_05_sh2100_3D_previous_50hrs.p'; shading_sites = ['BANG39']
-#fn0='./data/release_2023_06_05_sh2130_3D_previous_50hrs.p'; shading_sites = ['BANG40']
-#fn0='./data/release_2023_06_05_sh2200_3D_previous_50hrs.p'; shading_sites = ['BANG41']
-#fn0='./data/release_2023_06_05_sh2230_3D_previous_50hrs.p'; shading_sites = ['BANG43']
-#fn0='./data/release_2023_06_05_sh2300_3D_previous_50hrs.p'; shading_sites = ['BANG09']
-#fn0='./data/release_2023_06_05_sh2330_3D_previous_50hrs.p'; shading_sites = ['BANG11']
+fn0='./cumulative_particle_counts/release_2023_06_05_sh1900_3D_previous_50hrs.p'; shading_sites = ['BANG16']
+#fn0='./cumulative_particle_counts/release_2023_06_05_sh1930_3D_previous_50hrs.p'; shading_sites = ['BANG14', 'BANG15']
+#fn0='./cumulative_particle_counts/release_2023_06_05_sh2000_3D_previous_50hrs.p'; shading_sites = ['BANG35']
+#fn0='./cumulative_particle_counts/release_2023_06_05_sh2030_3D_previous_50hrs.p'; shading_sites = ['BANG37']
+#fn0='./cumulative_particle_counts/release_2023_06_05_sh2100_3D_previous_50hrs.p'; shading_sites = ['BANG39']
+#fn0='./cumulative_particle_counts/release_2023_06_05_sh2130_3D_previous_50hrs.p'; shading_sites = ['BANG40']
+#fn0='./cumulative_particle_counts/release_2023_06_05_sh2200_3D_previous_50hrs.p'; shading_sites = ['BANG41']
+#fn0='./cumulative_particle_counts/release_2023_06_05_sh2230_3D_previous_50hrs.p'; shading_sites = ['BANG43']
+#fn0='./cumulative_particle_counts/release_2023_06_05_sh2300_3D_previous_50hrs.p'; shading_sites = ['BANG09']
+#fn0='./cumulative_particle_counts/release_2023_06_05_sh2330_3D_previous_50hrs.p'; shading_sites = ['BANG11']
 
 tmp = pickle.load(open(fn0, "rb")) 
 counts_all = tmp['counts_all'] # [lon,lat,vertical] # summed particle # from previous 50hours
