@@ -1,0 +1,8 @@
+
+• get_particle_num_3D_orig_grid.py
+count particle numbers in each model grid cell by including the hourly released particles in the previous 50 hours of the target time.
+
+• plot_upper2m_particle_density.py
+plot particle density (= cumulative particle counts / volume of a model grid cell), averaged in the upper 2 m.
+
+
